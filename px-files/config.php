@@ -169,6 +169,9 @@ return call_user_func( function(){
 	 * サイトマップ読み込みの前に実行するプラグインを設定します。
 	 */
 	$conf->funcs->before_sitemap = array(
+		// Detect USER_AGENT
+		'tomk79\pickles2\presetPickles2Amp\userAgent::detect',
+
 		// PX=clearcache
 		'picklesFramework2\commands\clearcache::register' ,
 

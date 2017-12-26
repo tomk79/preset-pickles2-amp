@@ -42,6 +42,7 @@
     },
     "autoload": {
         "files": [
+            "px-files/php/user_agent.php"
         ]
     },
     "extra": {
