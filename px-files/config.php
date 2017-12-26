@@ -192,7 +192,15 @@ return call_user_func( function(){
 		'picklesFramework2\commands\api::register' ,
 
 		// PX=publish
-		'picklesFramework2\commands\publish::register' ,
+		'tomk79\pickles2\publishForMultiDevice\publish::register('.json_encode(array(
+			'devices'=>array(
+				array(
+					'user_agent'=>'iPhone',
+					'path_publish_dir'=>'./px-files/dist_smt/',
+				),
+			)
+		)).')' ,
+		// 'picklesFramework2\commands\publish::register' ,
 
 		// PX=px2dthelper
 		'tomk79\pickles2\px2dthelper\main::register' ,
@@ -244,6 +252,9 @@ return call_user_func( function(){
 				'data-contents-area',
 			) ,
 		)).')' ,
+
+		// AMP変換
+		'tomk79\pickles2\ampConvert\main::exec()',
 
 		// broccoli-receive-message スクリプトを挿入
 		'tomk79\pickles2\px2dthelper\broccoli_receive_message::apply('.json_encode( array(
