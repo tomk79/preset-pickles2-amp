@@ -101,6 +101,7 @@ return call_user_func( function(){
 		'/composer.json' => 'ignore' ,
 		'/composer.lock' => 'ignore' ,
 		'/README.md' => 'ignore' ,
+		'/LICENSE' => 'ignore' ,
 		'/vendor/*' => 'ignore' ,
 		'*/.DS_Store' => 'ignore' ,
 		'*/Thumbs.db' => 'ignore' ,
@@ -199,7 +200,11 @@ return call_user_func( function(){
 			'devices'=>array(
 				array(
 					'user_agent'=>'iPhone',
-					'path_publish_dir'=>'./px-files/dist_smt/',
+					'path_publish_dir'=>'./px-files/dist/',
+					'path_rewrite_rule'=>'{$dirname}/{$filename}.smt.{$ext}',
+					'paths_target'=>array(
+						'*.html',
+					),
 				),
 			)
 		)).')' ,

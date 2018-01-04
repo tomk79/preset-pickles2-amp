@@ -35,8 +35,8 @@
         "pickles2/px2-px2dthelper": "^2.0",
         "pickles2/px2-remove-attr": "^2.0",
         "pickles2/px2-sitemapexcel": "^2.0",
-        "tomk79/px2-amp-convert": "dev-master",
-        "tomk79/px2-publish-for-multi-device": "dev-master"
+        "tomk79/px2-amp-convert": "dev-develop",
+        "tomk79/px2-publish-for-multi-device": "dev-develop"
     },
     "require-dev": {
     },
