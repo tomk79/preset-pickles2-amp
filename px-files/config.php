@@ -212,6 +212,9 @@ return call_user_func( function(){
 
 		// PX=px2dthelper
 		'tomk79\pickles2\px2dthelper\main::register' ,
+
+		// AMP変換ユーティリティオブジェクトを生成する
+		'tomk79\pickles2\ampConvert\main::create_px_amp_convert_utils()',
 	);
 
 

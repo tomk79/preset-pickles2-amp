@@ -6,6 +6,8 @@
 		<!-- <?php if($px->conf()->UA == 'pc'){print 'HTML5 version';}else{print 'Mobile version';} ?> -->
 		<meta name="description" content="<?= htmlspecialchars($px->site()->get_current_page_info('description')); ?>" />
 		<meta name="keywords" content="<?= htmlspecialchars($px->site()->get_current_page_info('keywords')); ?>" />
+		<link rel="canonical" href="<?= htmlspecialchars($px->canonical()); ?>" />
+		<link rel="amphtml" href="<?= htmlspecialchars($px->amp_convert_utils->amphtml('{$dirname}/{$filename}.smt.{$ext}')); ?>" />
 <?= $px->get_contents_manifesto(); ?>
 
 		<link rel="stylesheet" href="<?= htmlspecialchars( $theme->files('/modules.css') ); ?>" />
